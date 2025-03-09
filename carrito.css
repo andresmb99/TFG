@@ -1,0 +1,262 @@
+header{
+    color:black;
+}
+
+body{
+    background-color: rgb(245,243,243);
+    margin:0;
+    padding: 0;    
+}
+
+table{
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td{
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th{
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.tabla{
+    font-size: x-large;
+    margin-left: 5%;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.total{
+    color:red;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 15px;
+}
+
+input[type="submit"]{
+    background-color: red;
+    color:white;
+    border:none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover{
+    background-color: darkred;
+}
+
+.titulos{
+    font-size: 90%;
+    font-family: "Arial", sans-serif;
+    letter-spacing: 1px;
+}
+
+.titulo{
+    font-family: "Arial", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+.vacio{
+    text-align: center;
+    font-size: 20px;
+    color: red;
+}
+
+.boton-volver{
+    font-family: "Arial", sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 5px;
+}
+
+/*boton confirmar pedido*/
+
+a[href="procesar.php"]{
+    display: block;
+    text-align: center;
+    background-color: green;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    width: fit-content;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+a[href="procesar.php"]:hover{
+    background-color: darkgreen;
+}
+
+footer{
+    background:linear-gradient(to right, rgba(9, 9, 9, 0.9), rgba(137, 136, 136, 0.6), rgba(9, 9, 9, 0.9)) ;
+    color:white;
+    padding:6px 0;
+    width: 100%;
+    text-align: center;
+    position:relative;
+    bottom:0;
+    font-family: "Arial", sans-serif;
+    letter-spacing: 1px;
+}
+
+#footer{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-segmento{
+    flex:1;
+}
+
+.footer-segmento a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-segmento a:hover{
+    text-decoration: underline;
+}
+
+/*modo oscuro*/
+
+.dark-mode body{
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .titulos{
+    color:white;
+    font-size: 90%;
+    font-family: "Arial", sans-serif;
+    letter-spacing: 1px;
+}
+
+.dark-mode table{
+    background-color: grey;
+}
+
+.dark-mode th{
+    background-color: #444;
+}
+
+.dark-mode tr:hover{
+    background-color: rgba(255,255, 255, 0.1);
+}
+
+.dark-mode input[type="submit"]{
+    background-color: darkred;
+}
+
+.dark-mode input[type="submit"]:hover{
+    background-color: red;
+}
+
+.dark-mode a[href="procesar.php"]{
+    background-color: limegreen;
+}
+
+.dark-mode a[href="procesar.php"]:hover{
+    background-color: green;
+}
+
+.dark-mode{
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode header{
+    color: white;
+}
+
+
+
+#darkMode{
+    background: none;
+    border: 2px solid black;
+    color: black;
+    padding:10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+#darkMode:hover{
+    background: rgb(176, 176, 176);
+    color: white;
+}
+
+#darkMode:active{
+    transform: scale(0.95);
+}
+
+/*estilo en modo oscuro*/
+
+.dark-mode #darkMode{
+    border:2px solid white;
+    color: white;
+}
+
+.dark.mode #darkMode:hover{
+    background: white;
+    color: black;
+}
+
+.buttonDarkMode{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.dark-mode{
+    background-color: #121212;
+    color:white;
+}
+
+.dark-mode .boton-volver{
+    font-family: "Arial", sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 5px;
+}

@@ -1,0 +1,250 @@
+header{
+    color:white;
+}
+
+body{
+    background-color: rgb(245,243,243);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.h3{
+    display:block;
+    font-size: 1.5em;
+    margin:1em 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom:5px;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+}
+
+.h2{
+    display:block;
+    font-size: 1.5em;
+    margin:1em 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    padding-bottom:5px;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+}
+
+/*contenedor principal de productos*/
+.productos-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 120px; /*espacio entre productos*/
+    justify-content: center; /*productos centrados horizontalmente*/
+    padding: 20px;
+    width: 170%;
+    max-width: 1300px;
+    height: auto;
+    min-height: 500px;
+}
+
+/*cada producto*/
+.producto{
+    display:flex;
+    width: 900px;
+    border: 2px solid #bdbdbd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*imagen del producto*/
+.producto-imagen img{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/*información del produc*/
+.producto-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.producto-info h3{
+    margin: 0;
+}
+
+.producto-info p{
+    margin: 5px 0;
+}
+
+/*formulario de añadir al carri*/
+.producto-info form{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+.producto-info input[type="number"]{
+    width: 40px;
+}
+
+.producto-info input[type="submit"]{
+    background-color: #007BFF;
+    color:white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.producto-info input[type="submit"]:hover{
+    background-color: #0056b3;
+}
+
+/*mensajes de error*/
+.error{
+    color:red;
+    font-weight: bold;
+}
+
+
+footer{
+    background: linear-gradient(to right, rgba(9, 9, 9, 0.9), rgba(137, 136, 136, 0.6), rgba(9, 9, 9, 0.9));
+    color:white;
+    padding: 6px 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom:0;
+    font-family: "Arial", sans-serif;
+    letter-spacing: 1px;
+}
+
+#footer{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.footer-segmento{
+    flex: 1;
+}
+
+.footer-segmento a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-segmento a:hover{
+    text-decoration: underline;
+}
+
+/*----------------*/
+/*dark mode*/
+
+.dark-mode{
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode header{
+    color: white;
+}
+
+.dark-mode .producto{
+    background-color: #222;
+    border: 2px solid #444;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+
+}
+
+.dark-mode .h3, .dark-mode .h2{
+    color: white;
+    border-bottom: 2px solid #555;
+}
+
+.dark-mode .producto{
+    background-color: #222;
+    border:2px solid #444;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .producto-info h3,
+.dark-mode .producto-info p{
+    color: white;
+}
+
+.dark-mode .producto-info input[type="submit"]{
+    background-color: #007bff;
+}
+
+.dark-mode .productos-info input[type="submit"]:hover{
+    background-color: #0056b3;
+}
+
+.dark-mode footer{
+    background: linear-gradient(to right, rgba(30, 30, 30, 0.9), rgba(90, 90, 90, 0.6 ), rgba(30, 30, 30, 0.9));
+}
+
+.dark-mode .footer-segmento a{
+    color:#bbb;
+}
+
+.dark-mode .footer-segmento a:hover{
+    color: white;
+}
+
+
+#darkMode{
+    background: none;
+    border: 2px solid black;
+    color: black;
+    padding:10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+#darkMode:hover{
+    background: rgb(176, 176, 176);
+    color: white;
+}
+
+#darkMode:active{
+    transform: scale(0.95);
+}
+
+/*estilo en modo oscuro*/
+
+.dark-mode #darkMode{
+    border:2px solid white;
+    color: white;
+}
+
+.dark.mode #darkMode:hover{
+    background: white;
+    color: black;
+}
+
+.buttonDarkMode{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.dark-mode{
+    background-color: #121212;
+    color:white;
+}

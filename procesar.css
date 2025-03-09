@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(245,243,243);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin:0;
+    font-style: normal;
+}
+
+.realizado{
+    font-family: "Arial", sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer{
+    background: linear-gradient(to right, rgba(9, 9, 9, 0.9), rgba(137, 136, 136, 0.6), rgba(9, 9, 9, 0.9));
+    color:white;
+    padding: 6px 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    left:0;
+    z-index: 1000;
+    font-family: "Arial", sans-serif;
+    letter-spacing: 1px;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-segmento{
+    flex:1;
+}
+
+.footer-segmento a{
+    color: #fff;
+    text-decoration:none;
+}
+
+.footer-segmento a:hover{
+    text-decoration:underline;
+}

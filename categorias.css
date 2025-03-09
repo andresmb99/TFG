@@ -1,0 +1,230 @@
+header{
+    color:black;
+}
+
+body{
+    background-color: rgb(245,243,243);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.h1{
+    display: block;
+    margin: 0.5em 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    padding-bottom: 5px;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+}
+
+.contenedor_categorias{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.lista-categorias{
+    list-style: none;
+    padding:0;
+}
+
+.lista-categorias li{
+   text-decoration: none;
+   color: black;
+   font-style: "Arial", sans-serif;
+   display: inline-block;
+   padding: 2px 16px 0px;
+   border: 2px solid black;
+   border-radius: 60px 60px 60px 60px;
+   background-color: #f0f0f0;
+   transition:all 0.3s ease;
+   margin-left: 5px;
+   text-transform: uppercase;
+}
+
+.lista-categorias li a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-style: "Arial", sans-serif;
+}
+
+.lista-categorias li a:hover{
+    color: rgb(65,65,196);
+}
+
+.error{
+    color:red;
+    font-weight: bold;
+}
+
+.contenido-add{
+    background-image: url('/img/Model-3.jpg');
+    border-radius: 10px;
+    width: 50%;
+    height: 40%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.texto-contenido-add{
+    position:absolute;
+    top:50%;
+    left: calc(52% + 20px);
+    transform: translateY(6%);
+    background-color: rgba(0,0,0,0.1);
+    padding: 10px;
+    color:black;
+    border-radius: 10px;
+    width: 40%;
+    margin-bottom: -10px;
+}
+
+.contenido-add-2{
+    background-image: url('/img/We-Robot.png');
+    border-radius: 10px;
+    width: 50%;
+    height: 40%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 48%;
+    position: relative;
+    display: inline-block;
+    margin-top: 2%;
+}
+
+.texto-contenido-add-2{
+    position:absolute;
+    top: 50%;
+    right: calc(52% + 20px);
+    transform: translateY(285%);
+    background-color: rgba(0,0,0,0.1);
+    padding:10px;
+    color: black;
+    border-radius: 10px;
+    width: 40%;
+    margin-bottom: -10px;
+}
+
+footer{
+    background: linear-gradient(to right, rgba(9, 9, 9, 0.9), rgba(137, 136, 136, 0.6), rgba(9,9,9,0.9));
+    color: white;
+    padding: 6px 0;
+    width: 100%;
+    text-align: center;
+    position:relative;
+    bottom:0;
+    margin-top: 10px;
+    font-family: "Arial", sans-serif;
+    letter-spacing: 1px;
+}
+
+#footer{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-segmento{
+    flex:1;
+}
+
+.footer-segmento a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-segmento a:hover{
+    text-decoration: underline;
+}
+
+/*-------------------------*/
+/*modo noche*/
+
+.buttonDarkMode{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.dark-mode{
+    background-color: #121212;
+    color:white;
+}
+
+.dark-mode body{
+    background-color: #121212;
+}
+
+.dark-mode header{
+    color: white;
+}
+
+.dark-mode .h1{
+    color: white;
+}
+
+.dark-mode .lista-categorias li{
+    background-color: #333;
+    color:white;
+    border: 2px solid white;
+}
+
+.dark-mode .lista-categorias li a{
+    color:white;
+}
+
+.dark-mode .texto-contenido-add,
+.dark-mode .texto-contenido-add-2{
+    background-color: rgba(255, 255, 255, 0.1);
+    color:white;
+}
+
+.dark-mode footer{
+    background: linear-gradient(to right, rgba(30, 30, 30, 0.9), rgba(90, 90, 90, 0.6), rgba(30, 30, 30, 0.9));
+}
+
+#darkMode{
+    background: none;
+    border: 2px solid black;
+    color: black;
+    padding:10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+#darkMode:hover{
+    background: rgb(176, 176, 176);
+    color: white;
+}
+
+#darkMode:active{
+    transform: scale(0.95);
+}
+
+/*estilo en modo oscuro*/
+
+.dark-mode #darkMode{
+    border:2px solid white;
+    color: white;
+}
+
+.dark.mode #darkMode:hover{
+    background: white;
+    color: black;
+}

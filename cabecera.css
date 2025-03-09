@@ -1,0 +1,46 @@
+.header{
+    background: linear-gradient(to right, rgba(9, 9, 9, 0.9), rgba(207, 207, 207, 0.6), rgba(9, 9, 9, 0.9)) ;
+    padding: 20px;
+    text-align: center;
+    height: 40px;
+}
+
+.lista{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-style: "Arial", sans-serif;
+    text-transform: uppercase;
+
+}
+
+.lista li{
+    margin-right: 15px;
+}
+
+.lista li:last-child{
+    margin-right: 0;
+}
+
+.lista-item{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+}
+
+.lista:hover{
+    color:white;
+}
+
+.bienvenido{
+    opacity: 1;
+    transition: opacity 1s ease;
+    font-style: "Arial", sans-serif;
+    text-transform: uppercase;
+}
+
+.bienvenido.ocultar{
+    opacity:0;
+}
